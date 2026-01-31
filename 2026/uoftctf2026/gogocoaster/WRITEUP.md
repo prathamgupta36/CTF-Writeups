@@ -17,10 +17,6 @@
 3. From the park, identify **which coaster** is shown.
 4. Look up its **height in feet** and plug everything into the flag format.
 
-Final answer we're aiming to justify:
-
-> `uoftctf{Diving_Coaster_213}`
-
 ---
 
 ## Step 1 - Finding the episode
