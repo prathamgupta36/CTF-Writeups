@@ -1,4 +1,4 @@
-# Gambler's Fallacy - uoftctf 2024 Crypto Challenge
+# Gambler's Fallacy - uoftctf 2026 Crypto Challenge
 
 ## Challenge Overview
 - Category: Crypto
