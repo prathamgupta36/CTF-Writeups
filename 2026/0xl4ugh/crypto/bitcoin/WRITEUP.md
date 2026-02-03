@@ -88,7 +88,7 @@ python3 solve.py challenges3.ctf.sd 33196
 ```
 
 ### Script
-See `solve.py`.
+See [`solve.py`](https://github.com/prathamgupta36/CTF-Writeups/raw/refs/heads/main/2026/0xl4ugh/crypto/bitcoin/solve.py).
 
 ## Notes
 - This is a classic invalid-curve attack, made even easier by accepting points on a singular curve.
