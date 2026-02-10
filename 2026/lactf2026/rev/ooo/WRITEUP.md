@@ -44,7 +44,11 @@ print(flag)
 The resulting flag contains non-ASCII Unicode "o" letters. In escaped form:
 
 ```
-lactf{g\u043e\u03bf\u0585\u1ecf\u01a1\u00f3\u1f40\u1f79\u1f78\u1f41\u1f43\u1f44\u1f42\u022f\u00f6d_j0b
+lactf{g\u043e\u03bf\u0585\u1ecf\u01a1\u00f3\u1f40\u1f79\u1f78\u1f41\u1f43\u1f44\u1f42\u022f\u00f6d_j0b}
+```
+Final flag:
+```
+lactf{gоοօỏơóὀόὸὁὃὄὂȯöd_j0b}
 ```
 
 To print the exact flag, run the script above (or decode the escapes).
