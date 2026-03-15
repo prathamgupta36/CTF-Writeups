@@ -49,7 +49,7 @@ import glob;print(open(glob.glob('flag*')[0]).read())
 
 ## Solver
 
-Exploit script: [solve.py](/home/al/Downloads/CTF/tkbctf5_2026/pwn/pyfsb/solve.py)
+Exploit script: [solve.py](solve.py)
 
 Run:
 

@@ -16,7 +16,7 @@ The final flag was:
 tkbctf{r34d_411_y0ur_d474-598504444abf8208a4e930eff1af600cd653b7dd623e57bdf365d1bfb8ea6748}
 ```
 
-The exploit script is in [solve.py](/home/al/Downloads/CTF/tkbctf5_2026/pwn/read-exact/solve.py).
+The exploit script is in [solve.py](solve.py).
 
 ## Source Review
 
@@ -164,7 +164,7 @@ Inside the Ubuntu 24.04 libc used by the challenge container, that PC is the ret
 libc_base = rip - 0x2a181
 ```
 
-This matches the container setup in [Dockerfile](/home/al/Downloads/CTF/tkbctf5_2026/pwn/read-exact/_src/read-exact/Dockerfile), which is based on `ubuntu:24.04`.
+This matches the container setup in [Dockerfile](_src/read-exact/Dockerfile), which is based on `ubuntu:24.04`.
 
 ## Stage 3: Seed ret2libc
 

@@ -114,7 +114,7 @@ So while the engine avoids classic exponential backtracking, this pattern still 
 
 I added a solver script:
 
-- [tools/solve.js](/home/al/Downloads/CTF/tkbctf5_2026/misc/linear-dos/tools/solve.js)
+- [tools/solve.js](tools/solve.js)
 
 Run:
 

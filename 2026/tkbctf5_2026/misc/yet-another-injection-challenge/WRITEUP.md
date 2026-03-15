@@ -113,7 +113,7 @@ This keeps every probe short enough for the remote service.
 
 ## Solver
 
-[solve.py](/home/al/Downloads/CTF/tkbctf5_2026/misc/yet-another-injection-challenge/solve.py) automates the full exploit:
+[solve.py](solve.py) automates the full exploit:
 
 1. downloads the exact `yq` version used by the challenge
 2. builds a character-expression map from safe `yq` primitives
