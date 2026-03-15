@@ -147,7 +147,7 @@ That immediately yields the flag.
 
 ## Reproduction
 
-The solver is in [solve.py](/home/al/Downloads/CTF/tkbctf5_2026/crypto/random-in-the-future/solve.py).
+The solver is in [solve.py](https://github.com/prathamgupta36/CTF-Writeups/blob/main/2026/tkbctf5_2026/crypto/random-in-the-future/solve.py).
 
 Run:
 

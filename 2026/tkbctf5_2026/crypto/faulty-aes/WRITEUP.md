@@ -24,7 +24,7 @@ if bytes.fromhex(input("hash: ")) == hash_val:
     print(flag)
 ```
 
-Source: [faulty-aes/server.py](/home/al/Downloads/CTF/tkbctf5_2026/crypto/faulty-aes/faulty-aes/server.py#L8)
+Source: [faulty-aes/server.py](https://github.com/prathamgupta36/CTF-Writeups/blob/main/2026/tkbctf5_2026/crypto/faulty-aes/faulty-aes/server.py#L8)
 
 So each connection gives us:
 
@@ -42,7 +42,7 @@ The last line of `encrypt_block` is:
 add_round_key(plain_state, self._key_matrices[-1])
 ```
 
-Source: [faulty-aes/aes.py](/home/al/Downloads/CTF/tkbctf5_2026/crypto/faulty-aes/faulty-aes/aes.py#L208)
+Source: [faulty-aes/aes.py](https://github.com/prathamgupta36/CTF-Writeups/blob/main/2026/tkbctf5_2026/crypto/faulty-aes/faulty-aes/aes.py#L208)
 
 For AES-128, `self._key_matrices` has 11 round keys:
 
@@ -96,7 +96,7 @@ The useful `[-1] -> [-3]` position is:
 
 The solver derives both positions from the local source instead of hardcoding them.
 
-Source: [solve.py](/home/al/Downloads/CTF/tkbctf5_2026/crypto/faulty-aes/solve.py#L18)
+Source: [solve.py](https://github.com/prathamgupta36/CTF-Writeups/blob/main/2026/tkbctf5_2026/crypto/faulty-aes/solve.py#L18)
 
 ## Why `K10 xor K8` is enough
 
@@ -161,7 +161,7 @@ K10 = (w40, w41, w42, w43)
 
 That is what `recover_last_round_key()` implements.
 
-Source: [solve.py](/home/al/Downloads/CTF/tkbctf5_2026/crypto/faulty-aes/solve.py#L67)
+Source: [solve.py](https://github.com/prathamgupta36/CTF-Writeups/blob/main/2026/tkbctf5_2026/crypto/faulty-aes/solve.py#L67)
 
 ## Recovering the master key and message
 
@@ -169,7 +169,7 @@ Once `K10` is known, we can invert the AES-128 key schedule backwards and recove
 
 That is implemented in `invert_key_schedule()`.
 
-Source: [solve.py](/home/al/Downloads/CTF/tkbctf5_2026/crypto/faulty-aes/solve.py#L80)
+Source: [solve.py](https://github.com/prathamgupta36/CTF-Writeups/blob/main/2026/tkbctf5_2026/crypto/faulty-aes/solve.py#L80)
 
 Now take the normal ciphertext `C` from the harmless-bit query and decrypt it with the recovered key:
 
@@ -202,7 +202,7 @@ This only needs three total connections to the remote service.
 
 The final solver is in:
 
-- [solve.py](/home/al/Downloads/CTF/tkbctf5_2026/crypto/faulty-aes/solve.py)
+- [solve.py](https://github.com/prathamgupta36/CTF-Writeups/blob/main/2026/tkbctf5_2026/crypto/faulty-aes/solve.py)
 
 Key pieces:
 
