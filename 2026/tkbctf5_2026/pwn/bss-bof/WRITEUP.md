@@ -289,7 +289,7 @@ Putting it together:
 
 ## Script
 
-The final exploit is in [solve.py](solve.py).
+The final exploit is in [solve.py](https://github.com/prathamgupta36/CTF-Writeups/blob/main/2026/tkbctf5_2026/pwn/bss-bof/solve.py).
 
 Local test:
 

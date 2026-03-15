@@ -17,9 +17,9 @@ tkbctf{y34h_u_4r3_4dm1n!-2b99ef896e9ad1706e046d3500319f21df4abcc9914655934b5b477
 
 ## Files
 
-- [chall.cpp](_src/verified-msg/chall.cpp)
-- [crypto.hpp](_src/verified-msg/crypto.hpp)
-- [solve.py](solve.py)
+- [chall.cpp](https://github.com/prathamgupta36/CTF-Writeups/blob/main/2026/tkbctf5_2026/pwn_crypto/verified-msg/_src/verified-msg/chall.cpp)
+- [crypto.hpp](https://github.com/prathamgupta36/CTF-Writeups/blob/main/2026/tkbctf5_2026/pwn_crypto/verified-msg/_src/verified-msg/crypto.hpp)
+- [solve.py](https://github.com/prathamgupta36/CTF-Writeups/blob/main/2026/tkbctf5_2026/pwn_crypto/verified-msg/solve.py)
 
 ## Service overview
 
@@ -174,7 +174,7 @@ In practice:
 - run Babai on the reduced lattice
 - validate candidates locally by recomputing `x(k G')`
 
-That is what [solve.py](solve.py) does.
+That is what [solve.py](https://github.com/prathamgupta36/CTF-Writeups/blob/main/2026/tkbctf5_2026/pwn_crypto/verified-msg/solve.py) does.
 
 ## Phase 1 result: normal forgeries
 

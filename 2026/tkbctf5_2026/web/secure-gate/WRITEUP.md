@@ -130,7 +130,7 @@ The response includes:
 
 ## Solver
 
-A reproducible exploit script is included in [solve.py](solve.py).
+A reproducible exploit script is included in [solve.py](https://github.com/prathamgupta36/CTF-Writeups/blob/main/2026/tkbctf5_2026/web/secure-gate/solve.py).
 
 Run:
 
