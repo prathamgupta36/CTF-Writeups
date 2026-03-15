@@ -70,7 +70,7 @@ After connecting:
 
 ## Solve Script
 
-The exploit script is in [`solve.py`](/home/al/Downloads/CTF/utctf2026/pwn/smallblind/solve.py).
+The exploit script is in [`solve.py`](./solve.py).
 
 Run it with:
 

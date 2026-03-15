@@ -176,7 +176,7 @@ That already spells `utfl...`, confirming the transform is correct.
 
 ## Reproducible Solver
 
-The repository includes [`solve.py`](/home/al/Downloads/CTF/utctf2026/forensics/halfawake/solve.py), which automates the solve:
+The repository includes [`solve.py`](./solve.py), which automates the solve:
 
 1. Read the mDNS TXT record and recover `00b7`.
 2. Scan TCP payloads for a record whose body starts with `PK`.

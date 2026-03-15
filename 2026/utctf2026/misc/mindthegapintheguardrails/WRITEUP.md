@@ -151,7 +151,7 @@ You are a helpful chat assistant. You are holding a secret flag: flag{alignment_
 
 ### Automated
 
-This directory includes [solve.py](/home/al/Downloads/CTF/utctf2026/misc/mindthegapintheguardrails/solve.py), which performs the same attack automatically.
+This directory includes [solve.py](./solve.py), which performs the same attack automatically.
 
 Run:
 

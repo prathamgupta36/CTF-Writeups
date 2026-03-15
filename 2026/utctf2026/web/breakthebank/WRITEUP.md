@@ -31,7 +31,7 @@ utflag{s0m3_c00k1es_@re_t@st13r_th@n_0th3rs}
 
 ## Recon
 
-The challenge directory only contained [DESCRIPTION.md](/home/al/Downloads/CTF/utctf2026/web/breakthebank/DESCRIPTION.md), so the solve started from live interaction with the target.
+The challenge directory only contained [DESCRIPTION.md](./DESCRIPTION.md), so the solve started from live interaction with the target.
 
 ### 1. Main page
 
@@ -146,7 +146,7 @@ The server accepts the forged token and treats the decrypted JSON as authenticat
 
 ## Reproduction
 
-The repository now includes [solve.py](/home/al/Downloads/CTF/utctf2026/web/breakthebank/solve.py), which performs the full attack.
+The repository now includes [solve.py](./solve.py), which performs the full attack.
 
 Run:
 

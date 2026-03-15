@@ -90,7 +90,7 @@ utflag{Congrats! You caught a red herring!}
 
 ## Exploit
 
-The exploit script in [`solve.py`](/home/al/Downloads/CTF/utctf2026/crypto/obliviouserror/solve.py) does exactly that:
+The exploit script in [`solve.py`](./solve.py) does exactly that:
 
 1. Connect to the remote service.
 2. Parse `N`, `e`, `x0`, and `x1`.

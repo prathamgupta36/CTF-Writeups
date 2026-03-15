@@ -18,11 +18,11 @@ This challenge is another image-to-what3words geolocation problem. The photo sho
 
 ## Key Observations
 
-From [`W3W2.jpg`](/home/al/Downloads/CTF/utctf2026/misc/w3w2/W3W2.jpg) and its local crops:
+From [`W3W2.jpg`](./W3W2.jpg) and its local crops:
 
-- [`store_crop.png`](/home/al/Downloads/CTF/utctf2026/misc/w3w2/store_crop.png)
-- [`sign_crop.png`](/home/al/Downloads/CTF/utctf2026/misc/w3w2/sign_crop.png)
-- [`sign_zoom.png`](/home/al/Downloads/CTF/utctf2026/misc/w3w2/sign_zoom.png)
+- [`store_crop.png`](./store_crop.png)
+- [`sign_crop.png`](./sign_crop.png)
+- [`sign_zoom.png`](./sign_zoom.png)
 
 The readable sign text is:
 

@@ -18,7 +18,7 @@ This challenge uses a reflection shot instead of a direct landmark photo. The vi
 
 ## Key Observations
 
-From [`W3W3.jpg`](/home/al/Downloads/CTF/utctf2026/misc/w3w3/W3W3.jpg):
+From [`W3W3.jpg`](./W3W3.jpg):
 
 - Large white block letters are reflected in a pool.
 - Red letter accents are also visible in the reflection.

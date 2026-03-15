@@ -70,7 +70,7 @@ and decoding each line as one byte produces the flag.
 
 ## Solver
 
-The automated extraction is in [solve.py](/home/al/Downloads/CTF/utctf2026/forensics/silentarchive/solve.py).
+The automated extraction is in [solve.py](./solve.py).
 
 Run:
 

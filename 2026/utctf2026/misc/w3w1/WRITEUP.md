@@ -18,7 +18,7 @@ This challenge is a landmark-to-what3words solve. The image shows a large stone 
 
 ## Key Observations
 
-From [`W3W1.jpg`](/home/al/Downloads/CTF/utctf2026/misc/w3w1/W3W1.jpg):
+From [`W3W1.jpg`](./W3W1.jpg):
 
 - The church facade is light limestone with a tall narrow spire.
 - The front doors are red.
@@ -31,10 +31,10 @@ That combination matches `University Christian Church` across from UT Austin's S
 
 The local helper artifacts already narrowed this correctly:
 
-- [`church.png`](/home/al/Downloads/CTF/utctf2026/misc/w3w1/church.png)
-- [`commons_ucc.jpg`](/home/al/Downloads/CTF/utctf2026/misc/w3w1/commons_ucc.jpg)
-- [`ucc_site.png`](/home/al/Downloads/CTF/utctf2026/misc/w3w1/ucc_site.png)
-- [`osm_local_map.png`](/home/al/Downloads/CTF/utctf2026/misc/w3w1/osm_local_map.png)
+- [`church.png`](./church.png)
+- [`commons_ucc.jpg`](./commons_ucc.jpg)
+- [`ucc_site.png`](./ucc_site.png)
+- [`osm_local_map.png`](./osm_local_map.png)
 
 Those make the landmark identification straightforward:
 

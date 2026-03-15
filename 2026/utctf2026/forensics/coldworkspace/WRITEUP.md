@@ -48,7 +48,7 @@ After Base64-decoding all three fields and decrypting:
 
 ## Solver
 
-The automated extraction is in [solve.py](/home/al/Downloads/CTF/utctf2026/forensics/coldworkspace/solve.py).
+The automated extraction is in [solve.py](./solve.py).
 
 Run:
 

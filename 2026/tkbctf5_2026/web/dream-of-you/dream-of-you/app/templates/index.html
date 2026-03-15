@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Dream of You</title>
+    <style>
+      :root {
+        --ink: #2b2b2b;
+        --muted: #7a6e62;
+        --accent: #c9897a;
+        --accent-dark: #9b5b4b;
+        --paper: #fffaf5;
+        --panel: #fff2e8;
+        --border: #ead9cc;
+      }
+      * { box-sizing: border-box; }
+      body {
+        font-family: "Georgia", "Times New Roman", serif;
+        margin: 0;
+        color: var(--ink);
+        background: linear-gradient(180deg, #fdf7f1 0%, #f6efe6 100%);
+      }
+      a { color: var(--accent-dark); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .wrap { max-width: 820px; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; }
+      header { margin-bottom: 1.75rem; }
+      h1 { letter-spacing: 0.02em; margin: 0 0 0.5rem; }
+      .tagline { color: var(--muted); margin: 0; }
+      .actions { margin: 1rem 0 2rem; }
+      .button {
+        display: inline-block;
+        background: var(--accent);
+        color: #fff;
+        padding: 0.5rem 0.9rem;
+        border-radius: 6px;
+        font-size: 0.95rem;
+      }
+      .button:hover { background: var(--accent-dark); }
+      .card {
+        background: var(--paper);
+        padding: 1rem 1.2rem;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        box-shadow: 0 3px 10px rgba(107, 70, 53, 0.08);
+      }
+      .muted { color: var(--muted); }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 0.5rem 1rem;
+        align-items: center;
+      }
+      .share {
+        background: var(--panel);
+        border: 1px dashed var(--border);
+        padding: 1rem 1.2rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+      }
+      input {
+        font: inherit;
+        padding: 0.45rem 0.6rem;
+        border-radius: 6px;
+        border: 1px solid var(--border);
+        background: #fff;
+        width: 180px;
+      }
+      button {
+        font: inherit;
+        background: #fff;
+        border: 1px solid var(--border);
+        padding: 0.45rem 0.8rem;
+        border-radius: 6px;
+        margin-left: 0.35rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>Dream of You</h1>
+        <p class="tagline">Post your dream novel.</p>
+      </header>
+      <div class="actions">
+        <a class="button" href="/submit">Write a novel</a>
+      </div>
+      {% if stories %}
+        {% for s in stories %}
+          <div class="card">
+            <div class="grid">
+              <div>
+                <h3>{{ s.title }}</h3>
+                <p class="muted">id={{ s.id }}</p>
+              </div>
+              <div><a href="/read/{{ s.id }}">Read →</a></div>
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <p class="muted">No novels yet.</p>
+      {% endif %}
+      <div class="share">
+        <h3>Share with a reader</h3>
+        <form method="post" action="/report">
+          <input name="id" placeholder="novel id" />
+          <button type="submit">Share</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

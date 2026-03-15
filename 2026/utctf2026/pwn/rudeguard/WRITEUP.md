@@ -153,7 +153,7 @@ The final `p64(0)` is not strictly necessary for control flow, but it makes the 
 
 ## Solver
 
-I wrote the exploit as [`solve.py`](/home/al/Downloads/CTF/utctf2026/pwn/rudeguard/solve.py).
+I wrote the exploit as [`solve.py`](./solve.py).
 
 Key parts:
 

@@ -1,0 +1,13 @@
+services:
+  dream-of-you:
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+    ports:
+      - ${PORT:-5000}:5000
+    depends_on:
+      - reader-bot
+  reader-bot:
+    build: ./reader_bot
+    environment:
+      - FLAG=tkbctf{dummy}

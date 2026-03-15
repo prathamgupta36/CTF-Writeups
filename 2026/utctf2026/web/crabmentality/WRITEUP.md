@@ -30,7 +30,7 @@ The returned backup source contains the flag encoded as a list of hex byte liter
 
 ## Solver
 
-The automated solver is in [solve.py](/home/al/Downloads/CTF/utctf2026/web/crabmentality/solve.py).
+The automated solver is in [solve.py](./solve.py).
 
 It:
 
